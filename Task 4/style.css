@@ -1,0 +1,50 @@
+body {
+    background-color:cadetblue;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    min-height: 100vh;
+}
+.profilecard{
+    background-color:darkslategray;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 17px;
+    margin: 100px;
+}
+h1{
+    color: aliceblue;
+}
+h2{
+    color: aliceblue;
+}
+p{
+    color:aliceblue;
+}
+ul{
+    list-style-position: inside;
+    padding:10px
+}
+li{
+    margin: 10px;
+    color:aliceblue;
+}
+#message{
+    color: black;
+    margin-top: 30px;
+}
+button{
+    border: none;
+    border-radius: 10px;
+    cursor:pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(9, 3, 2);
+    padding: 12px 25px;
+}
+button:hover{
+    background-color:beige;
+}
