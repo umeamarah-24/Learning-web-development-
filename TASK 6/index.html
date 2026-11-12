@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <header>
+       <p class="subtitle">Meet Our Team Members</p>
+       <h1>People Behind the Ideas.</h1>
+       <p class="intro">
+            Meet our creative and talented team members.
+       </p>
+
+    </header>
+
+    <main class="profiles">
+
+       <div class="card">
+            <img src="Avatar1.jpg" alt="Aliza Ahad">
+            <h2>Aliza Ahad</h2>
+            <h4>Frontend Developer</h4>
+            <p>
+              Frontend Developer passionate about web design.
+            </p>
+
+            <div class="skills">
+              <p>HTML, CSS, JavaScript</p>
+            </div>
+            <button onclick="showProfile('Aliza')">
+              View Profile
+            </button>
+            <p id="Aliza" class="extra" hidden>
+              Aliza Ahad is passionate about frontend development using web technologies.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="Avatar2.jpg" alt="Aqsa">
+            <h2>Aqsa</h2>
+            <h4>Backend Developer</h4>
+            <p>
+              >Backend Developer who loves coding.
+            </p>
+
+            <div class="skills">
+              <p>Java, Python, SQL</p>
+              </div>
+            <button onclick="showProfile('Aqsa')">
+                View Profile
+            </button>
+            <p id="Aqsa" class="extra" hidden>
+              Develops and manages server-side applications, databases, and APIs to ensure smooth functionality.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="Avatar3.jpg" alt="Sidra Ali">
+            <h2>Sidra Ali</h2>
+            <h4>UI/UX Designer</h4>
+            <p>
+              Sidra Ali enjoys designing creative interfaces and improving user experiences.
+            </p>
+            <div class="skills">
+               <p>Figma, CSS, Photoshop</p>
+            </div>
+
+            <button onclick="showProfile('sidra')">
+              View Profile
+            </button>
+
+            <p id="sidra" class="extra" hidden>
+              Sidra Ali creates user-friendly and visually appealing designs that improve user experience.
+            </p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
