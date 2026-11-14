@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-card">
+    <h1>Quiz App</h1>
+
+    <form id="quiz-form">
+      <div class="question">
+        <p class="question-text">1. What does HTML stand for?</p>
+        <label class="option"><input type="radio" name="q1" value="a"> Hyper Text Markup Language</label>
+        <label class="option"><input type="radio" name="q1" value="b"> High Text Machine Language</label>
+        <label class="option"><input type="radio" name="q1" value="c"> Hyperlinks and Text Markup Language</label>
+      </div>
+
+      <div class="question">
+        <p class="question-text">2. Which language is used to style web pages?</p>
+        <label class="option"><input type="radio" name="q2" value="a"> HTML</label>
+        <label class="option"><input type="radio" name="q2" value="b"> CSS</label>
+        <label class="option"><input type="radio" name="q2" value="c"> Python</label>
+        <label class="option"><input type="radio" name="q2" value="d"> SQL</label>
+      </div>
+
+      <div class="question">
+        <p class="question-text">3. Which language makes web pages interactive?</p>
+        <label class="option"><input type="radio" name="q3" value="a"> JavaScript</label>
+        <label class="option"><input type="radio" name="q3" value="b"> CSS</label>
+        <label class="option"><input type="radio" name="q3" value="c"> XML</label>
+        <label class="option"><input type="radio" name="q3" value="d"> Python</label>
+      </div>
+
+        <div class="question">
+        <p class="question-text">4. Which HTML tag is used to create a link?</p>
+        <label class="option"><input type="radio" name="q4" value="a"> link</label>
+        <label class="option"><input type="radio" name="q4" value="b"> a</label>
+        <label class="option"><input type="radio" name="q4" value="c"> href</label>
+        <label class="option"><input type="radio" name="q4" value="d"> url</label>
+      </div>
+
+      <div class="question">
+        <p class="question-text">5. Which CSS property changes the text color?</p>
+        <label class="option"><input type="radio" name="q5" value="a"> font-color</label>
+        <label class="option"><input type="radio" name="q5" value="b"> text-style</label>
+        <label class="option"><input type="radio" name="q5" value="c"> color</label>
+        <label class="option"><input type="radio" name="q5" value="d"> background-color</label>
+      </div>
+
+      <button type="submit" id="submit-btn">Submit</button>
+    </form>
+
+    <p id="message" class="message"></p>
+
+    <div id="result" class="result hidden">
+      <h2>Your Score</h2>
+      <p id="score"></p>
+      <p id="feedback"></p>
+      <button type="button" id="restart-btn">Restart Quiz</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
