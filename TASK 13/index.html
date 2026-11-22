@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <section class="checker-card">
+            <h1>Password Strength Checker</h1>
+            <p class="intro">
+                Create a stronger password while making it secure.
+            </p>
+            <form id="passwordForm" novalidate>
+                <div class="field">
+                    <label for="password">Password</label>
+                    <div class="input-wrap">
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            autocomplete="new-password"
+                        >
+                        <button type="button" class="toggle-btn" id="togglePassword">
+                            Show
+                        </button>
+                    </div>
+                </div>
+                <div class="strength-heading">
+                    <span>Strength</span>
+                    <strong id="strengthLabel">Not entered</strong>
+                </div>
+                <div class="strength-track" id="strengthBar"
+                     role="progressbar" aria-valuemin="0"
+                     aria-valuemax="5" aria-valuenow="0">
+                    <div class="strength-fill" id="strengthFill"></div>
+                </div>
+                <p class="strength-message" id="strengthMessage">
+                    Enter a password to check its strength.
+                </p>
+                <div class="requirements">
+                    <h2>Password Requirements</h2>
+                    <ol>
+                        <li id="lengthRule">
+                            <span class="rule-icon"></span>
+                            At least 8 characters
+                        </li>
+                        <li id="upperRule">
+                            <span class="rule-icon"></span>
+                            At least one uppercase letter
+                        </li>
+                        <li id="lowerRule">
+                            <span class="rule-icon"></span>
+                            At least one lowercase letter
+                        </li>
+                        <li id="numberRule">
+                            <span class="rule-icon"></span>
+                            At least one number
+                        </li>
+                        <li id="specialRule">
+                            <span class="rule-icon"></span>
+                            At least one special character (@, #, !)
+                        </li>
+                    </ol>
+                </div>
+                <div class="field confirm-field">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="input-wrap">
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Enter password again"
+                            autocomplete="new-password"
+                        >
+                        <button type="button" class="toggle-btn" id="toggleConfirm">
+                            Show
+                        </button>
+                    </div>
+                    <p class="match-message" id="matchMessage"></p>
+                </div>
+                <button type="reset" class="reset-btn">
+                    ↻ Reset
+                </button>
+            </form>
+            <p class="footer-note">
+                Your password is checked in this browser and is not sent anywhere.
+            </p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
