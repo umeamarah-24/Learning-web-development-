@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ShopEase</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#cart">Cart (<span id="cartCount">0</span>)</a>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <h2>Welcome to ShopEase</h2>
+        <p>Find your favorite products at the best prices.</p>
+    </section>
+    <section class="products-section" id="products">
+        <h2>Our Products</h2>
+        <input
+            type="text"
+            id="searchBar"
+            placeholder="Search products..."
+        >
+        <div class="product-container">
+            <div class="product">
+                <img src="Images/headphones.jpg" alt="Headphones">
+                <h3>Headphones</h3>
+                <p>Rs. 2500</p>
+                <button class="addBtn" data-name="Headphones" data-price="2500">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="product">
+                <img src="Images/watch.jpg" alt="Watch">
+                <h3>Watch</h3>
+                <p>Rs. 3500</p>
+                <button class="addBtn" data-name="Watch" data-price="3500">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="product">
+               <img src="Images/perfume.jpg" alt="Perfume">
+                <h3>Perfume</h3>
+                <p>Rs. 2000</p>
+                <button class="addBtn" data-name="Perfume" data-price="2000">
+                    Add to Cart
+                </button>
+            </div>
+            <div class="product">
+               <img src="Images/sneakers.jpg" alt="Sneakers">
+                <h3>Sneakers</h3>
+                <p>Rs. 4500</p>
+                <button class="addBtn" data-name="Sneakers" data-price="4500">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="cart-section" id="cart">
+        <h2>Shopping Cart</h2>
+        <div id="cartItems">
+            <p>Your cart is empty.</p>
+        </div>
+        <h3>Total: Rs. <span id="totalPrice">0</span></h3>
+    </section>
+    <footer>
+        <p>&copy; 2026 ShopEase. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
